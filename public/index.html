@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sophia: Your AI Finance Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Sophia</h1>
+
+    <div class="upload-section">
+      <label for="analysisDepth">Choose Analysis Type:</label>
+      <select id="analysisDepth">
+        <option value="summary" selected>Summary</option>
+        <option value="detailed">Detailed</option>
+      </select>
+
+      <label for="pdfInput">Upload Bank Statement:</label>
+      <input type="file" id="pdfInput" accept=".pdf" />
+    </div>
+
+    <div id="response" class="chat-box"></div>
+
+    <div class="chat-input">
+      <input type="text" id="questionInput" placeholder="Ask me anything about your finances..." autocomplete="off" />
+      <button id="sendBtn" title="Send">↑</button>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
