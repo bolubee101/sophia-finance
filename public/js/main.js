@@ -88,3 +88,12 @@ window.addEventListener('DOMContentLoaded', async () => {
     console.error('Error loading history:', err);
   }
 });
+
+document.getElementById('clearChatBtn').addEventListener('click', () => {
+  if (confirm('Are you sure you want to clear this chat?')) {
+    localStorage.removeItem('sessionId');
+    document.getElementById('response').innerHTML = '';
+    getSessionId();
+    window.location.reload();
+  }
+});

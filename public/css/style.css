@@ -129,6 +129,26 @@ h1 {
   background: #0056b3;
 }
 
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#clearChatBtn {
+  padding: 6px 12px;
+  background: #dc3545;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#clearChatBtn:hover {
+  background-color: #b02a37;
+}
+
 @media (max-width: 600px) {
   .container {
     padding: 15px;
