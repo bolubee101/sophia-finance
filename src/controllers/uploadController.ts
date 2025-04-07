@@ -32,7 +32,7 @@ export const handleUpload = async (req: Request, res: Response) => {
   }
 
   try {
-    if (!req.file || !req.file.path) {
+    if (!req.file || !req.file.buffer) {
       return res.status(400).json({ error: 'File is missing or invalid' });
     }
 
