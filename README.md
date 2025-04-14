@@ -52,6 +52,3 @@ Visit `http://localhost:3000` in your browser.
 - GPT-based analysis
 - Browser-specific session via `localStorage`
 - History saved per session in MongoDB
-
----
-Enjoy analyzing finances smartly! 💸🤖
